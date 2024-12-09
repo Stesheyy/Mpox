@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>M-pox</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Website for tracking and educating on M-pox">
+    <meta name="keywords" content="report, Mpox, healthcare">
+    <meta name="author" content="Stellah">
+    <link rel="shortcut icon" href="index.html">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img id="logo" src="assets/Logo.png" alt="Logo">
+            </a>
+        </div>
+        <nav class="menu">
+            <a href="index.html"> Home</a>
+            <a href="about.html"> About Us</a>
+             <!-- Link to the new report page -->
+             <div class="dropdown">
+                <a href="/resources" class="dropbtn"> Resources <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="resources/symptoms.html">Symptoms</a>
+                    <a href="resources/transmission.html">Transmission</a>
+                    <a href="resources/prevention.html">Prevention</a>
+                    <a href="resources/treatment.html">Treatment</a>
+                    <a href="resources/vaccines.html">Vaccines</a>
+                
+               
+                </div>
+            </div>
+            <a href="Analysis.html"> Symptom checker</a>
+            <a href="Report.html"> Report</a>
+           <a href="News.html"> News updates</a>
+            <a href="contact.html"> Contact Us</a>
+            <a href="php/logout.php">Log out</a>
+        </nav>
+    </header>
+
+<main>
+   
+        <section class="contact-section">
+            <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.777182351463!2d36.80947437347921!3d-1.308954835648206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f112e9eff4827%3A0x17a918597484c8ea!2sStrathmore%20University!5e0!3m2!1sen!2ske!4v1730975660846!5m2!1sen!2ske" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+                <div>
+                <form class="map-form" action ="php/contact.php" method = "POST" >
+                    <div  class="map-info">
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="map-info">
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email"required>
+                    </div>
+                    <div class="map-info">
+                        <label for="phone number">Phone number:</label><br>
+                        <input type="phone" id="phone-number" name="phone number"required>
+                    </div>
+                    <div class="map-info">
+                        <label for="message">Message box:</label><br>
+                        <textarea class="message-box" name="message" id="message-box"required></textarea>
+                    </div>
+                    <div class="map-button">
+                        <button type = "submit " name = "submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <script>
+            document.getElementById('contactForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                var formData = new FormData(this);
+                
+                fetch('php/contact.php', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.text())
+                .then(data => {
+                    alert(data);
+                })
+                .catch((error) => {
+                    console.error('Error:', error);
+                });
+            });
+            </script>
+</main>
+
+</body>
+<footer>
+       
+
+    <div class="footer-container">
+        <h2>Quick Links</h2>
+        <nav class="footer-nav">
+          <ul class="footer-nav-list">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="/Resources.html">Resources</a></li>
+            <li><a href="/analysis.html">Analysis</a></li>
+            <li><a href="/report.html">Report</a></li>
+            <li><a href="/news.html"> News updates</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+
+
+
+    <p class="footer-centre">  2024 M-pox. All rights reserved. </p>
+    
+</footer>
+</html>
+

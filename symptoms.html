@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>M-pox</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Website for tracking and educating on M-pox">
+    <meta name="keywords" content="report, Mpox, healthcare">
+    <meta name="author" content="Stellah">
+    <link rel="shortcut icon" href="index.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #630b21; /* Burgundy */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 15px;
+            padding: 10px;
+        }
+
+        .header a:hover {
+            background-color: #6a001c; /* Darker burgundy on hover */
+            border-radius: 5px;
+        }
+
+        .logo img {
+            width: 120px;
+        }
+
+        .menu {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+
+        .dropbtn {
+            font-size: 18px;
+            padding: 10px;
+            background-color: #800020;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropbtn:hover {
+            background-color: #6a001c;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #800020;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #6a001c;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .symptoms-container {
+            padding: 40px 20px;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        .symptoms-header h1 {
+            text-align: center;
+            font-size: 36px;
+            color: #800020; /* Burgundy */
+            margin-bottom: 10px;
+        }
+
+        .symptoms-header p {
+            text-align: center;
+            font-size: 18px;
+            color: #666;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            font-size: 30px;
+            color: #800020;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        section p, section ul {
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: center;
+            color: #444;
+        }
+
+        section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        section ul li {
+            margin: 10px 0;
+        }
+
+        .intro-image, .symptom-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .contact-link {
+            text-decoration: none;
+            color: #800020;
+            font-weight: bold;
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .contact-link:hover {
+            color: #6a001c;
+        }
+
+        footer {
+            background-color: #800020; /* Burgundy */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .footer-nav {
+            margin-bottom: 20px;
+        }
+
+        .footer-nav-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .footer-nav-list li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .footer-nav-list li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .footer-nav-list li a:hover {
+            color: #6a001c;
+        }
+
+        .footer-centre {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                   </a>
+        </div>
+        <nav class="menu">
+            <a href="/index.html">Home</a>
+            <a href="login.html">Log in</a>
+            <a href="about.html">About Us</a>
+            <div class="dropdown">
+                <a href="/resources" class="dropbtn">Resources <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="resources/symptoms.html">Symptoms</a>
+                    <a href="resources/transmission.html">Transmission</a>
+                    <a href="resources/prevention.html">Prevention</a>
+                    <a href="resources/treatment.html">Treatment</a>
+                    <a href="resources/vaccines.html">Vaccines</a>
+                </div>
+            </div>
+            <a href="Analysis.html">Symptom Checker</a>
+            <a href="Report.html">Report</a>
+            <a href="News.html">News Updates</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <div class="symptoms-container">
+        <div class="symptoms-header">
+            <h1>Symptoms of Mpox</h1>
+            <p>Understanding the symptoms of Mpox is essential for early detection, treatment, and preventing its spread.</p>
+        </div>
+
+        <section class="introduction-section">
+            <div class="intro-content">
+                <h2>What is Mpox?</h2>
+                <p>Mpox is a viral infection characterized by a distinct rash and flu-like symptoms. It primarily spreads through close contact and can affect various parts of the body. Early identification of symptoms can aid in timely medical intervention.</p>
+            </div>
+        </section>
+
+        <section class="early-symptoms">
+            <h2>Early Symptoms</h2>
+            <p>The early stages of Mpox often resemble flu-like symptoms and can appear within 5-21 days after exposure. These may include:</p>
+            <ul>
+                <li>Fever</li>
+                <li>Headache</li>
+                <li>Muscle aches and backache</li>
+                <li>Chills and sweats</li>
+                <li>Fatigue and lack of energy</li>
+                <li>Swollen lymph nodes (a distinguishing feature)</li>
+            </ul>
+        </section>
+
+        <section class="rash-symptoms">
+            <h2>Rash Development</h2>
+            <p>One of the defining characteristics of Mpox is a rash that typically appears a few days after the onset of fever and other symptoms. The rash goes through several stages:</p>
+            <ul>
+                <li><strong>Macules:</strong> Flat, red spots on the skin</li>
+                <li><strong>Papules:</strong> Raised bumps, often itchy or uncomfortable</li>
+                <li><strong>Vesicles:</strong> Fluid-filled blisters</li>
+                <li><strong>Pustules:</strong> Blisters that become pus-filled and may cause pain</li>
+                <li><strong>Scabs:</strong> Pustules dry out and form scabs before eventually healing</li>
+            </ul>
+            <p>The rash often starts on the face before spreading to other parts of the body, including the palms of hands and soles of feet.</p>
+        </section>
+
+        <section class="severe-symptoms">
+            <h2>Severe Symptoms</h2>
+            <p>While many cases of Mpox are mild, some individuals may experience more severe symptoms. Vulnerable groups such as young children, pregnant women, and individuals with compromised immune systems are at higher risk of complications, which may include:</p>
+            <ul>
+                <li>Skin infections from open sores</li>
+                <li>Respiratory distress or cough</li>
+                <li>Secondary bacterial infections</li>
+                <li>In rare cases, complications affecting other organs</li>
+            </ul>
+        </section>
+
+        <section class="symptom-timeline">
+            <h2>Symptom Timeline</h2>
+            <p>The progression of Mpox symptoms typically follows a set timeline:</p>
+            <ul>
+                <li><strong>Incubation Period:</strong> 5-21 days with no symptoms</li>
+                <li><strong>Prodromal Stage:</strong> 1-4 days of flu-like symptoms, swollen lymph nodes</li>
+                <li><strong>Rash Stage:</strong> 2-4 weeks of rash development and healing</li>
+            </ul>
+        </section>
+
+        <section class="medical-attention">
+            <h2>When to Seek Medical Attention</h2>
+            <p>If you experience any of these symptoms, especially a rash with fever, swollen lymph nodes, or exposure to an infected individual, it is important to consult a healthcare professional promptly. Early diagnosis and treatment can reduce the risk of complications and prevent transmission.</p>
+            <a href="contact.html" class="contact-link">Contact Us for More Information</a>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <h2>Quick Links</h2>
+            <nav class="footer-nav">
+                <ul class="footer-nav-list">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="/Resources.html">Resources</a></li>
+                    <li><a href="/analysis.html">Analysis</a></li>
+                    <li><a href="/report.html">Report</a></li>
+                    <li><a href="/news.html">News updates</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <p class="footer-centre">2024 M-pox. All rights reserved.</p>
+    </footer>
+</body>
+</html>

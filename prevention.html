@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>M-pox</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Website for tracking and educating on M-pox">
+    <meta name="keywords" content="report, Mpox, healthcare">
+    <meta name="author" content="Stellah">
+    <link rel="shortcut icon" href="index.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #750b26; /* Burgundy */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 15px;
+            padding: 10px;
+        }
+
+        .header a:hover {
+            background-color: #6a001c; /* Darker burgundy on hover */
+            border-radius: 5px;
+        }
+
+        .logo img {
+            width: 120px;
+        }
+
+        .menu {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+
+        .dropbtn {
+            font-size: 18px;
+            padding: 10px;
+            background-color: #800020;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropbtn:hover {
+            background-color: #6a001c;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #800020;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #6a001c;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .prevention-container {
+            padding: 40px 20px;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        .prevention-header h1 {
+            text-align: center;
+            font-size: 36px;
+            color: #800020; /* Burgundy */
+            margin-bottom: 10px;
+        }
+
+        .prevention-header p {
+            text-align: center;
+            font-size: 18px;
+            color: #666;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            font-size: 30px;
+            color: #800020;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        section p, section ul {
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: center;
+            color: #444;
+        }
+
+        section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        section ul li {
+            margin: 10px 0;
+        }
+
+        .prevention-read-more {
+            text-decoration: none;
+            color: #800020;
+            font-weight: bold;
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .prevention-read-more:hover {
+            color: #6a001c;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                   </a>
+        </div>
+        <nav class="menu">
+            <a href="/index.html">Home</a>
+            <a href="login.html">Log in</a>
+            <a href="about.html">About Us</a>
+            <div class="dropdown">
+                <a href="/resources" class="dropbtn">Resources <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="resources/symptoms.html">Symptoms</a>
+                    <a href="resources/transmission.html">Transmission</a>
+                    <a href="resources/prevention.html">Prevention</a>
+                    <a href="resources/treatment.html">Treatment</a>
+                    <a href="resources/vaccines.html">Vaccines</a>
+                </div>
+            </div>
+            <a href="Analysis.html">Symptom Checker</a>
+            <a href="Report.html">Report</a>
+            <a href="News.html">News Updates</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <div class="prevention-container">
+        <div class="prevention-header">
+            <h1>Prevention of Mpox</h1>
+            <p>Effective prevention measures are crucial to control the spread of Mpox and protect vulnerable communities.</p>
+        </div>
+    
+        <section class="prevention-introduction">
+            <div class="prevention-content">
+                <h2>Why Prevention Matters</h2>
+                <p>Mpox prevention involves a combination of vaccination, hygiene practices, and minimizing close contact with infected individuals. Understanding and implementing these measures can significantly reduce the risk of transmission.</p>
+            </div>
+        </section>
+    
+        <section class="vaccination-section">
+            <h2>Vaccination for Mpox</h2>
+            <p>The Mpox vaccine is recommended for individuals at high risk, including healthcare workers and those exposed to the virus. The vaccine can help reduce the severity of symptoms if administered early.</p>
+            <ul>
+                <li>Consult your healthcare provider about vaccine availability in your area.</li>
+                <li>Vaccination is most effective when administered within 4 days of exposure.</li>
+                <li>Booster doses may be recommended for long-term protection.</li>
+            </ul>
+        </section>
+    
+        <section class="hygiene-practices">
+            <h2>Hygiene and Sanitation Practices</h2>
+            <p>Maintaining good hygiene is essential for preventing the spread of Mpox, especially in community settings.</p>
+            <ul>
+                <li>Wash hands frequently with soap and water for at least 20 seconds.</li>
+                <li>Use alcohol-based hand sanitizers when soap is not available.</li>
+                <li>Avoid touching your face, especially the eyes, nose, and mouth.</li>
+                <li>Disinfect frequently touched surfaces such as door handles and phones.</li>
+            </ul>
+        </section>
+    
+        <section class="contact-avoidance">
+            <h2>Avoiding Close Contact</h2>
+            <p>Mpox primarily spreads through direct contact with infected individuals or contaminated surfaces. To minimize the risk:</p>
+            <ul>
+                <li>Avoid close physical contact with anyone showing symptoms like rashes or fever.</li>
+                <li>Practice social distancing in crowded or high-risk areas.</li>
+                <li>Wear protective masks if you are in close contact with infected individuals.</li>
+                <li>Limit exposure to animals that may carry the virus.</li>
+            </ul>
+        </section>
+    
+        <section class="protective-measures">
+            <h2>Protective Measures for Healthcare Workers</h2>
+            <p>Healthcare professionals are at higher risk of exposure. Following these protective measures can reduce the likelihood of infection:</p>
+            <ul>
+                <li>Use personal protective equipment (PPE) including gloves, masks, and face shields.</li>
+                <li>Follow infection control protocols and isolation guidelines strictly.</li>
+                <li>Regularly disinfect medical equipment and patient rooms.</li>
+                <li>Report any exposure incidents promptly to your healthcare facility.</li>
+            </ul>
+        </section>
+    
+        <section class="exposure-response">
+            <h2>What to Do If You Are Exposed</h2>
+            <p>If you suspect you've been exposed to Mpox, take immediate action to prevent the spread:</p>
+            <ul>
+                <li>Isolate yourself from others and seek medical advice promptly.</li>
+                <li>Notify close contacts so they can monitor for symptoms.</li>
+                <li>Follow healthcare guidelines for testing and quarantine.</li>
+            </ul>
+            <a href="https://www.cdc.gov/poxvirus/monkeypox/prevention.html" target="_blank" class="prevention-read-more">Read More on CDC Guidelines</a>
+        </section>
+    
+        <section class="additional-resources">
+            <h2>Additional Resources</h2>
+            <p>Stay informed with the latest updates and guidelines from trusted sources:</p>
+            <ul>
+                <li><a href="https://www.who.int/emergencies/disease-outbreak-news" target="_blank">WHO Disease Outbreak News</a></li>
+                <li><a href="https://www.cdc.gov/poxvirus/monkeypox/index.html" target="_blank">CDC Monkeypox Information</a></li>
+                <li><a href="https://www.unicef.org/stories/what-you-need-know-about-monkeypox" target="_blank">UNICEF Mpox Resources</a></li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>

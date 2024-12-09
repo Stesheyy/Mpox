@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mpox System - Register</title>
+    <link rel="stylesheet" href="css/login.css">
+    <script src="javascript/register.js" defer></script>
+</head>
+<body>
+    <div class="register-container">
+        <h2>Register to Mpox System</h2>
+        <form id="registerForm" action="php/register.php" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="role">Select Role:</label>
+            <select id="role" name="role" required>
+                <option value="admin">Admin</option>
+                <option value="healthcare">Healthcare Personnel</option>
+                <option value="patient">Patient</option>
+            </select>
+
+            <button type="submit">Register</button>
+            <p>Already have an account? <a href="login.html">Login here</a></p>
+        </form>
+    </div>
+</body>
+</html>

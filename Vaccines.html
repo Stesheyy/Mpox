@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>M-pox</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Website for tracking and educating on M-pox">
+    <meta name="keywords" content="report, Mpox, healthcare">
+    <meta name="author" content="Stellah">
+    <link rel="shortcut icon" href="index.html">
+    
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #470404;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        .logo img {
+            max-width: 150px;
+        }
+
+        nav.menu {
+            display: flex;
+            justify-content: center;
+            background-color: #470404;
+            padding: 10px 0;
+        }
+
+        nav.menu a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            text-transform: uppercase;
+        }
+
+        nav.menu a:hover {
+            background-color: #e7d1d1;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f0c0c0;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            padding: 12px 16px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f3c4c4;
+        }
+
+        .vaccination-container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            background-color: #fff;
+        }
+
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        .intro-image, .vaccination-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+
+        .introduction-section, .vaccine-types, .vaccination-recommendations, 
+        .vaccine-effectiveness, .vaccine-safety, .vaccine-access {
+            padding: 20px;
+            background-color: #f1d9d9;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .intro-content, .vaccination-recommendations ul, .vaccine-effectiveness ul, 
+        .vaccine-safety ul, .vaccination-recommendations li, 
+        .vaccine-effectiveness li, .vaccine-safety li {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .vaccination-recommendations ul, .vaccine-effectiveness ul, .vaccine-safety ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        .vaccination-container a {
+            color: #491019;
+            text-decoration: none;
+        }
+
+        .vaccination-container a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-link {
+            display: block;
+            text-align: center;
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                
+            </a>
+        </div>
+        <nav class="menu">
+            <a href="/index.html"> Home</a>
+            <a href="/login.html"> Log in</a>
+            <a href="/about.html"> About Us</a>
+            <div class="dropdown">
+                <a href="/resources" class="dropbtn"> Resources <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="resources/symptoms.html">Symptoms</a>
+                    <a href="resources/transmission.html">Transmission</a>
+                    <a href="resources/prevention.html">Prevention</a>
+                    <a href="resources/treatment.html">Treatment</a>
+                    <a href="resources/Vaccines.html">Vaccines</a>
+                    
+                </div>
+            </div>
+            <a href="Analysis.html"> Symptom checker</a>
+            <a href="Report.html"> Report</a>
+            <a href="News.html"> News updates</a>
+            <a href="contact.html"> Contact Us</a>
+        </nav>
+    </header>
+    <div class="vaccination-container">
+        <h1>Vaccination for Mpox</h1>
+        <p>Vaccines play a crucial role in preventing the spread of Mpox and protecting vulnerable populations.</p>
+    
+        <section class="introduction-section">
+           <div class="intro-content">
+                <h2>Are There Vaccines for Mpox?</h2>
+                <p>Yes, certain vaccines can help prevent Mpox infection, particularly for individuals at higher risk. Vaccination is a proactive step to reduce the transmission and impact of the virus.</p>
+            </div>
+        </section>
+    
+        <section class="vaccine-types">
+            <h2>Types of Vaccines</h2>
+            <p>Several vaccines, originally developed for smallpox, have been found effective against Mpox. These include:</p>
+            <ul>
+                <li><strong>JYNNEOS (Imvamune or Imvanex):</strong> An FDA-approved vaccine specifically for Mpox and smallpox, suitable for adults and immunocompromised individuals.</li>
+                <li><strong>ACAM2000:</strong> A live virus vaccine effective against smallpox and Mpox, used under special circumstances due to potential side effects.</li>
+                <li><strong>LC16m8:</strong> A newer vaccine variant with a better safety profile, mainly used in Japan.</li>
+            </ul>
+            </section>
+    
+        <section class="vaccination-recommendations">
+            <h2>Who Should Get Vaccinated?</h2>
+            <p>Vaccination is recommended for individuals at higher risk of Mpox exposure, including:</p>
+            <ul>
+                <li>Healthcare workers and laboratory personnel handling Mpox specimens</li>
+                <li>Individuals with close contact to confirmed cases</li>
+                <li>Communities experiencing outbreaks or high transmission rates</li>
+            </ul>
+            </section>
+    
+        <section class="vaccine-effectiveness">
+            <h2>Vaccine Effectiveness</h2>
+            <p>Vaccines are most effective when administered before exposure to the virus. However, they can still provide protection if given shortly after exposure. Key benefits include:</p>
+            <ul>
+                <li>Reducing the severity of symptoms if infection occurs</li>
+                <li>Lowering the risk of transmission within communities</li>
+                <li>Providing long-term immunity against Mpox and related viruses</li>
+            </ul>
+               </section>
+    
+        <section class="vaccine-safety">
+            <h2>Side Effects and Safety</h2>
+            <p>Most vaccines are safe, with minimal side effects. Common side effects include:</p>
+            <ul>
+                <li>Pain or swelling at the injection site</li>
+                <li>Fever and fatigue</li>
+                <li>Headache or muscle aches</li>
+            </ul>
+                 </section>
+    
+        <section class="vaccine-access">
+            <h2>Where to Get Vaccinated</h2>
+            <p>If you're in a high-risk category or want to protect yourself from Mpox, find a vaccination center near you:</p>
+            <a href="https://www.cdc.gov/poxvirus/monkeypox/vaccines.html" class="contact-link" target="_blank">Find Vaccination Centers</a>
+        </section>
+    </div>
+</body>
+</html>
